@@ -27,25 +27,31 @@ div#main>div#right {
     width: 350px;
     background-color: rgb(255, 255, 255);
 }
+
 div#main>div#right>p {
     opacity: 0.6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 div#main>div#right>h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 div#main>div#right>div#prices {
     display: flex;
     gap: 32px;
     align-items: center;
 }
+
 div#main>div#right>div#prices>p:first-child {
     font-size: 32px;
     color: green;
 }
+
 div#main>div#right>div#prices>p:last-child {
     text-decoration: line-through;
 }
+
 div#main>div#right>div#button {
     padding: 16px;
     background-color: rgb(85, 171, 85);
@@ -54,10 +60,37 @@ div#main>div#right>div#button {
 }
 
 div#main>div#right>div#button>a {
-text-decoration: none;
-color: white;
+    text-decoration: none;
+    color: white;
 }
+
 div#main>div#right>div#button>i {
     color: white;
 }
 
+div#main>div#right>div#button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+@media screen  and (max-width:802px){
+    div#main {
+        flex-direction: column;
+        align-items: center;
+    }
+    div#main>div#left>img {
+        border-radius: 16px 16px 0px 0px;
+    }
+    div#main>div#left {
+        background-color: transparent;
+        width:330px;
+        height: 250px;
+    }
+
+    div#main>div#right {
+        padding: 16px;
+        width: 330px;
+        height: auto;
+        border-radius: 0px 0px 16px 16px;
+    }
+
+}
