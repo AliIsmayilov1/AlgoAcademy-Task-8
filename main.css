@@ -1,9 +1,18 @@
+@font-face {
+    font-family: Mont;
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Fraun;
+    src: url(Fraunces/static/Fraunces_144pt-SemiBold.ttf);
+}
 body {
-    background-color: rgb(254, 241, 225);
+    background-color: hsl(30, 38%, 92%);
     align-items: center;
     display: flex;
     height: 100vh;
     justify-content: center;
+    margin: 0px;
 }
 
 
@@ -33,11 +42,11 @@ div#main>div#right {
 
 div#main>div#right>p {
     opacity: 0.6;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Mont;
 }
 
 div#main>div#right>h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Fraun;
 }
 
 div#main>div#right>div#prices {
@@ -49,6 +58,7 @@ div#main>div#right>div#prices {
 div#main>div#right>div#prices>p:first-child {
     font-size: 32px;
     color: green;
+    font-family: Fraun;
 }
 
 div#main>div#right>div#prices>p:last-child {
@@ -60,6 +70,9 @@ div#main>div#right>div#button {
     background-color: rgb(85, 171, 85);
     text-align: center;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 div#main>div#right>div#button>a {
@@ -67,16 +80,13 @@ div#main>div#right>div#button>a {
     color: white;
 }
 
-div#main>div#right>div#button>i {
-    color: white;
-}
 
 div#main>div#right>div#button:hover {
     background-color: darkgreen;
     cursor: pointer;
 }
 
-@media screen and (max-width:802px) {
+@media screen and (max-width:375px) {
     div#main {
         flex-direction: column;
         align-items: center;
@@ -84,6 +94,7 @@ div#main>div#right>div#button:hover {
 
     div#main>div#left>img {
         border-radius: 16px 16px 0px 0px;
+        height: auto;
     }
 
     div#main>div#left {
